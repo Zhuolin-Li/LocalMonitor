@@ -1,6 +1,6 @@
 # LocalMonitor
 
-## Server Setup
+## I. Server Setup
 
 ### Database Creation
 1. create a SQL database with schema named "client_data",2 tables named "positions" and "assets"
@@ -22,7 +22,7 @@
 
 you can make it a website dashboard and hosted at the local server, in this way, every computer has access to your local network will have access to this website and can easily monitor all positions and assets data
 
-## Polaris Code Update
+## II. Polaris Code Update
 
 1. add local server ip address to .env file
 2. read that ip address from main.py
