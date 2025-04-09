@@ -29,3 +29,4 @@ you can make it a website dashboard and hosted at the local server, in this way,
 3. pass that ip address from main to position summary window during initialization
 4. if position summary window's local server ip is not empty (means there is a local server ip address in .env file==> we need to sync data to that local server, if it's empty, means we do not need to sync), set a flag var: is_local_sync to true
 5. every time position window fetches cash and position, if flag var is true, call local_sync() function to sync data to the local server
+6. local_sync() should create a new thread to process this request
