@@ -16,3 +16,16 @@
      id(INT), username(VARCHAR), account(VARCHAR), cash(VARCHAR),datetime(VARCHAR).
      
      id is the primary key and should be unique and non null
+
+
+### Local Monitor
+
+you can make it a website dashboard and hosted at the local server, in this way, every computer has access to your local network will have access to this website and can easily monitor all positions and assets data
+
+## Polaris Code Update
+
+1. add local server ip address to .env file
+2. read that ip address from main.py
+3. pass that ip address from main to position summary window during initialization
+4. if position summary window's local server ip is not empty (means there is a ip address in .env file), set a flag var: is_local_sync to true
+5. every time position window fetches cash and position, if flag var is true, call local_sync() function to sync data to the local server
