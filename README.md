@@ -2,6 +2,7 @@
 
 ## Server Setup
 
+### Database Creation
 1. create a SQL database with schema named "client_data",2 tables named "positions" and "assets"
 
 2. for "positions" table, it has these columns:
